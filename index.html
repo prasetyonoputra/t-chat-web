@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+
+        <link rel="stylesheet" href="./assets/css/home/style-dekstop.css" />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="logo">
+                <img id="imageProfileLogo" />
+            </div>
+            <div class="user-section">
+                <span class="username" id="username">Welcome, John</span>
+                <button class="logout-btn" onclick="handleLogout()">
+                    Logout
+                </button>
+            </div>
+        </nav>
+
+        <!-- Main Content Container -->
+        <div class="container">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="search">
+                    <input
+                        type="text"
+                        placeholder="Search Friends, Groups..."
+                    />
+                </div>
+                <h3>Friends</h3>
+                <ul>
+                    <li>Friend 1</li>
+                    <li>Friend 2</li>
+                    <li>Friend 3</li>
+                    <li>Friend 4</li>
+                </ul>
+            </div>
+
+            <!-- Post Section -->
+            <div class="post-section">
+                <h2>Create a Post</h2>
+                <textarea placeholder="What's on your mind?"></textarea>
+                <button onclick="postContent()">Post</button>
+
+                <div class="post-list" id="post-list">
+                    <!-- Post list will be populated here -->
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="right-section">
+                <h3>Groups</h3>
+                <ul>
+                    <li>Group 1</li>
+                    <li>Group 2</li>
+                    <li>Group 3</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 MyWebsite. All Rights Reserved.</p>
+        </footer>
+
+        <script src="./assets/scripts/global.js"></script>
+        <script src="./assets/scripts/home/home.js"></script>
+    </body>
+</html>
